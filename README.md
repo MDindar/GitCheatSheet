@@ -41,7 +41,7 @@ If you want to set the user name and email for specific git repo and not globall
 3.5  $ git commit -m "Your Message"         : commit the staged snapshot 
 ```
 
-###4 : Update and Publish
+### Part 4 : Update and Publish
 ```
 4.1  $ git remote -v  Or --verbose           : List all already configured remote
 4.2  $ git remote add <name> <url>           : Add new remote repository 
