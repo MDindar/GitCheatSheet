@@ -36,4 +36,7 @@ If you want to set the user name and email for specific git repo and not globall
 3.1  $ git status                           : List which file staged, unstaged and untracked 
 3.2  $ git add .                            : This will add all unstaged file to stage area
 3.3  $ git add SingleFile.txt               : You can add a single file to the stage area
+3.4  $ git add --all                        : Instead of adding file one by one, This command add the whole current directory to the stage area
+3.5  $ git add -u                           : stage the updated (tracked) file only .
+3.5  $ git commit -m "Your Message"         : commit the staged snapshot 
 ```
