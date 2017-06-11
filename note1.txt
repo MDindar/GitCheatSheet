@@ -1,0 +1,36 @@
+git clone GithubAddress
+git add file1.html 
+git add . // add all file to the stage
+git commit -m "your message "
+git push // send to the origin
+
+git branch // get local branches
+git branch --all // get all local and remote branches
+git branch -d Branch1 // removing branch1 locally
+git push origin --delete branch1 // removing branch1 on the origin
+
+git fetch // sysnc with your origin repo
+git diff master origin/master 
+git diff master origin/master --name-only
+git merge origin/master  // merge current branch with origin/master
+
+git pull // git fetch + merge
+
+git stash // after some modification but not ready to commit save for the future
+git stash list // list all the stash
+git stash apply // apply the first saved stash
+git stash drop  stash@{0}
+
+git checkout file1.html  //rest the file from the repository ofcourse if it wouldnt stage yet
+git reset HEAD file1.html // unstage the modifiction
+get reset --hard HEAD // reset the working and stage area to the last known of respository
+git revert "SHA1 number of the last commit " // in case you have been commiting some changes and wanna revert
+
+git tag // list all local tag
+git tag -a realse1 // add an annotated tag named realse1
+git push --tags // push tags to the origin
+git checkout realse1 
+
+
+
+git push origin branch1 // push the current branch to the remote branch1
