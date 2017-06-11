@@ -42,12 +42,13 @@ If you want to set the user name and email for specific git repo and not globall
 ```
 
 ###4 : Update and Publish
-
+```
 4.1  $ git remote -v  Or --verbose           : List all already configured remote
 4.2  $ git remote add <name> <url>           : Add new remote repository 
-     
-     for example : 
-     $ git remot add origin https://github.com/YourAccount/YourGitRepo.git  // https style
-
+```    
+for example : 
+$ git remot add origin https://github.com/YourAccount/YourGitRepo.git  // https style
+```
 4.3  $ git remote set-url origin git@github.com:YourAccount/YourGitRepo.git // ssh style
-                                             : this will update the url 
+                                             : this will update the url
+```
