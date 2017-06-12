@@ -63,7 +63,7 @@ for example :
 4.3   git remote set-url origin git@github.com:YourAccount/YourGitRepo.git // ssh style
                                              : this will update the url
 ```
-### Part 5 : Brnaching
+### Part 5 : Branching
 
 ```
 5.1  git branch                        : get local branches
@@ -71,14 +71,22 @@ for example :
 
 
 5.3  git branch branch1                : Create local branch named branch1 from the last commit of the current branch.
+
 5.4  git push origin master:RemoteBranch1 : Create remote branch of master named RemoteBranch1.
 5.5  git push --set-upstream origin remoteBranch2 : Create remote branch of local current branch.
+```
+5.5 is for the first time, After that on each branch you are , if the aproprieate remote branch exist , the git push command is enough.
 
+```
+5.6  git branch branch2 [starting point] : create a branch at a point other than the last commit of the current branch (also known as HEAD). A starting point could be any thing like revision sha 
+5.7  git branch -m new_branch_name     : rename the current local branch, So that mean you need to checkout first then rename.
+5.8  git branch -m target_branch   new_name    : rename the other local branch
+5.9  git checkout branch1              : switch to branch1
+5.10  git branch -d Branch1             : remove branch1 locally
+5.11  git push origin --delete branch1  : remove branch1 on the origin
+```
 
-5.4  git branch branch2 [starting point] : create a branch at a point other than the last commit of the current branch (also known as HEAD). A starting point could be any thing like revision sha 
-5.5  git branch -m new_branch_name     : rename the current local branch, So that mean you need to checkout first then rename.
-5.6  git branch -m target_branch   new_name    : rename the other local branch
-5.7  git checkout branch1              : switch to branch1
-5.8  git branch -d Branch1             : remove branch1 locally
-5.9  git push origin --delete branch1  : remove branch1 on the origin
+### Part 6 : Mergin
+```
+6.1 git merge branch1           : Merge branch1 to current branch
 ```
