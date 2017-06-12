@@ -63,3 +63,15 @@ $ git remot add origin https://github.com/YourAccount/YourGitRepo.git  // https 
 4.3  $ git remote set-url origin git@github.com:YourAccount/YourGitRepo.git // ssh style
                                              : this will update the url
 ```
+### Part 5 : Brnaching
+
+```
+5.1 $ git branch                        : get local branches
+5.2 $ git branch --all                  : get all local and remote branches
+5.3 $ git branch branch1                : Create local branch named branch1
+5.4 $ git branch -m new_branch_name     : rename the current local branch, So that mean you need to checkout first then rename.
+5.5 $ git branch -m target_branch   new_name    : rename the other local branch
+5.4 $ git checkout branch1              : switch to branch1
+5.3 $ git branch -d Branch1             : remove branch1 locally
+5.4 $ git push origin --delete branch1  : remove branch1 on the origin
+```
