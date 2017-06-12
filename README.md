@@ -68,10 +68,11 @@ $ git remot add origin https://github.com/YourAccount/YourGitRepo.git  // https 
 ```
 5.1 $ git branch                        : get local branches
 5.2 $ git branch --all                  : get all local and remote branches
-5.3 $ git branch branch1                : Create local branch named branch1
-5.4 $ git branch -m new_branch_name     : rename the current local branch, So that mean you need to checkout first then rename.
-5.5 $ git branch -m target_branch   new_name    : rename the other local branch
-5.4 $ git checkout branch1              : switch to branch1
-5.3 $ git branch -d Branch1             : remove branch1 locally
-5.4 $ git push origin --delete branch1  : remove branch1 on the origin
+5.3 $ git branch branch1                : Create local branch named branch1 from the last commit of the current branch.
+5.4 $ git branch branch2 [starting point] : create a branch at a point other than the last commit of the current branch (also known as HEAD). A starting point could be any thing like revision sha 
+5.5 $ git branch -m new_branch_name     : rename the current local branch, So that mean you need to checkout first then rename.
+5.6 $ git branch -m target_branch   new_name    : rename the other local branch
+5.7 $ git checkout branch1              : switch to branch1
+5.8 $ git branch -d Branch1             : remove branch1 locally
+5.9 $ git push origin --delete branch1  : remove branch1 on the origin
 ```
