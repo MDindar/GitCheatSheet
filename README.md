@@ -1,9 +1,9 @@
 # GitCheatSheet
-Very basic and necessary git command to geting started working with github
+Very basic and necessary git command to geting started working with git and github
 ### Part 0 : Verifyig git installation
 
 ```
-in cmd just try git --version, if git installed, then it show the version, Otherwise you need to install it.
+0.1    git --version          : if git installed, then it show the version, Otherwise you need to install it.
 ```
 
 ### Part 1 : Setting username and email 
@@ -38,52 +38,61 @@ In case you have different identities and you don't want to have global identity
 
 ```
 2.1    git init  : it create new local git repository in current directory
-2.2    git clone https://github.com/YourAccount/YourGitRepo.git : this will clone existing repsitory
+2.2    git clone git@github.com:YourAccount/Repo.git : this will clone existing repsitory
 ```
 
 ### Part 3 : Local changes
 ```
 3.1   git status                           : List which file staged, unstaged and untracked 
+
 3.2   git add .                            : This will add all unstaged file to stage area
 3.3   git add filename or Dirctory         : You can add a single file to the stage area
 3.4   git add --all                        : Instead of adding file one by one, This command add the whole current directory to the stage area
-3.5   git add -u                           : stage the updated (tracked) file only .
+3.5   git add -u                           : stage the updated (tracked) file only
+
 3.6   git reset filename or directoyr      : Unstage the file that contain changes
 3.7   git commit -m "Your Message"         : commit the staged snapshot 
 ```
 
 ### Part 4 : Update and Publish
 ```
-4.1   git remote -v  Or --verbose           : List all already configured remote
-4.2   git remote add <name> <url>           : Add new remote repository 
-```    
-for example : 
- git remot add origin https://github.com/YourAccount/YourGitRepo.git  // https style
+4.1   git remote -v  / --verbose           : List all already configured remote
+4.2   git remote add origin git@github.com:YourAccount/Repo.git           : Add new remote repo 
 ```
-4.3   git remote set-url origin git@github.com:YourAccount/YourGitRepo.git // ssh style
-                                             : this will update the url
+For updating remote repo
+```
+4.3   git remote set-url origin git@github.com:YourAccount/Repo.git     :This will update the url
 ```
 ### Part 5 : Branching
 
+List the branches :
 ```
 5.1  git branch                        : get local branches
 5.2  git branch --all                  : get all local and remote branches
+```
 
-
+Creating local Branches :
+```
 5.3  git branch branch1                : Create local branch named branch1 from the last commit of the current branch.
+5.4  git branch branch2 [starting point] : create a branch at a point other than the last commit of the current branch (also known as HEAD). A starting point could be any thing like revision sha 
 
-5.4  git push origin master:RemoteBranch1 : Create remote branch of master named RemoteBranch1.
-5.5  git push --set-upstream origin remoteBranch2 : Create remote branch of local current branch.
+5.5  git checkout branch1              : switch to branch1
 ```
-5.5 is for the first time, After that on each branch you are , if the aproprieate remote branch exist , the git push command is enough.
+Creating Remote Branch :
+```
+5.6  git push origin master:RemoteBranch1 : Create remote branch of master named RemoteBranch1.
+5.7  git push --set-upstream origin remoteBranch2 : Create remote branch of local current branch.
+```
+5.8 is for the first time, After that on each branch you are , if the aproprieate remote branch exist , the git push command is enough.
 
 ```
-5.6  git branch branch2 [starting point] : create a branch at a point other than the last commit of the current branch (also known as HEAD). A starting point could be any thing like revision sha 
-5.7  git branch -m new_branch_name     : rename the current local branch, So that mean you need to checkout first then rename.
-5.8  git branch -m target_branch   new_name    : rename the other local branch
-5.9  git checkout branch1              : switch to branch1
-5.10  git branch -d Branch1             : remove branch1 locally
-5.11  git push origin --delete branch1  : remove branch1 on the origin
+renameing and removing the branchs :
+```
+5.9  git branch -m new_branch_name     : rename the current local branch, So that mean you need to checkout first then rename.
+5.10  git branch -m target_branch   new_name    : rename the other local branch
+
+5.11  git branch -d Branch1             : remove branch1 locally
+5.12  git push origin --delete branch1  : remove branch1 on the origin
 ```
 
 ### Part 6 : Mergin
