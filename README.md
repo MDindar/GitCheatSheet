@@ -99,3 +99,13 @@ renameing and removing the branchs :
 ```
 6.1 git merge branch1           : Merge branch1 to current branch
 ```
+In some cases you may confilict , in these cases , you need to edit the files and fix the conflict manually , other wise you can abort the merge and get back to the previous state by the following command :
+```
+6.2 git merge --abort           : abort the merge and get back to the previous state.
+```
+
+### Part 3: Diff
+```
+7.1 git diff                    : this will show the unstaged changes of the current branch.
+```
+If a file is staged, but was modified after it was staged, git diff will show the differences between the current file and the staged version.
