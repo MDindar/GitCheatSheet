@@ -104,8 +104,21 @@ In some cases you may confilict , in these cases , you need to edit the files an
 6.2 git merge --abort           : abort the merge and get back to the previous state.
 ```
 
-### Part 3: Diff
+### Part 7: Diff
 ```
 7.1 git diff                    : this will show the unstaged changes of the current branch.
 ```
 If a file is staged, but was modified after it was staged, git diff will show the differences between the current file and the staged version.
+
+### Part 8: Pulling
+
+The following command will fetch and then merge the changes automatically
+```
+8.1 git pull                  : retrieve changes from the remote repo to the curent local repo
+8.2 git pull origin feature-A : retrieve changes from the remote feature-A branch to the current local repo
+```
+We can pulling manually
+```
+8.3 git fetch origin  : retrieve objects and update refs from origin
+8.4 git merge origin/feature-A : actually perform the merge
+```
