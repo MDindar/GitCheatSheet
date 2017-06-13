@@ -85,7 +85,7 @@ Creating Remote Branch :
 ```
 5.8 is for the first time, After that on each branch you are , if the aproprieate remote branch exist , the git push command is enough.
 
-```
+
 renameing and removing the branchs :
 ```
 5.9  git branch -m new_branch_name     : rename the current local branch, So that mean you need to checkout first then rename.
