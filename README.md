@@ -33,7 +33,7 @@ In case you have different identities and you don't want to have global identity
 1.5   git config --global --remove-section user.name
 1.6   git config --global --remove-section user.email
 ```
-In case it didn't worked you can use this command 
+In case it didn't work you can use this command 
 
 ```
 1.7  git config --global --unset-all user.name
