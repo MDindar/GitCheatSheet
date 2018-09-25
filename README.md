@@ -13,6 +13,7 @@ So First try these commands in order to find out if you already set these proper
 ```
 1.1     git config --global user.name     : return the global username 
 1.2     git config --global user.email    : return the global email
+1.3     git config --global --list       : retaurn all global parameters
 ```
 If nothing returned , Then you need to specifiy global username and email by the following command  
 
@@ -31,6 +32,12 @@ In case you have different identities and you don't want to have global identity
 ```
 1.5   git config --global --remove-section user.name
 1.6   git config --global --remove-section user.email
+```
+In case it didn't worked you can use this command 
+
+```
+1.7  git config --global --unset-all user.name
+1.8  git config --global --unset-all user.email
 ```
 
 
