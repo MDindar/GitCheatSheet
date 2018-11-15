@@ -40,6 +40,11 @@ In case it didn't work you can use this command
 1.8  git config --global --unset-all user.email
 ```
 
+If you want to know the location of all setting , then you can call this command : 
+
+```
+git config --list --show-origin
+```
 
 ### Part 2 : Creating git repository
 
